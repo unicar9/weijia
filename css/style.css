@@ -1,0 +1,20 @@
+.section {
+  /*font-size: 6em;*/
+  /*text-align: center;*/
+}
+
+.mySelector {
+  z-index: 1000000;
+}
+
+.js-tilt {
+  transform-style: preserve-3d;
+}
+
+.card-image:hover {
+  transform: translateZ(50px);
+}
+
+.about {
+  color: #eee;
+}
