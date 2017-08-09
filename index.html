@@ -15,17 +15,35 @@
   <script src="js/p5.dom.js" charset="utf-8"></script>
   <script src="js/jquery.fullpage.js" charset="utf-8"></script>
   <script src="js/jquery.funnyText.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
   <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js" charset="utf-8"></script>
   <script src="js/main.js" charset="utf-8"></script>
   <title>Weijia's Portfolio</title>
 </head>
 <body>
 
-  <div id="fullpage">
-  	<div class="section">
-      <div class="mySelector">funnText is applied here</div>
+<nav class="navbar">
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="#page1">Home</a>
+      <a class="navbar-item" href="#page2">About</a>
+      <a class="navbar-item" href="#page3">Projects</a>
+      <a class="navbar-item" href="#page4">Contact</a>
     </div>
-    <div class="section">
+    <div class="navbar-end">
+      <a class="navbar-item" href="https://drive.google.com/open?id=0BxBEIuC4loxEWWtld3VWbkg5YjA" target="_blank">Resume</a>
+    </div>
+  </div>
+</nav>
+
+  <div id="fullpage">
+    <!-- home page  -->
+  	<div data-anchor="page1" class="section">
+      <div id="typeit"></div>
+    </div>
+
+    <!-- about me page -->
+    <div data-anchor="page2" class="section">
       <div class="columns">
         <div class="column is-5">
           <img class="image" src="image/me.png" draggable="false" alt="">
@@ -34,15 +52,18 @@
           <div class="content about is-medium">
             <h2>/About Me</h2>
 
-            <p>I'm a newly graduated General Assembly student, my fellow students and I just finished this 12-week Web Development Immersive course. Previously I worked as a graphic designer and had a general interest towards computer related stuff. I learned programming through some online courses before, but in order to enter this industry and make some contribution, it's more sensible to obtain some systematic training through formal institutions. During the last three months, I love coding and building websites even more as I developed more skills with it. I especially enjoyed the process of doing every individual or project project, because no matter how frustrated and anxious I felt along the way, there's always a huge sense of fulfillment at the end. <br><br>
-            Now I'm looking for full-time position to utilise what I learned and keep learning. My goal is make dynamic, user-friendly, functional yet visually pleasing websites.</p>
+            <p>I'm a newly graduated General Assembly student. Previously I worked as a graphic designer and had a general interest towards computer related stuff. I learned programming through some online courses before, but in order to enter this industry and make some contribution, it's more sensible to obtain some systematic training through formal institutions. After three months, I love coding and building websites even more as I developed more skills with it. I especially enjoyed the process of doing every individual or project project, because no matter how frustrated and anxious I felt along the way, there's always a huge sense of fulfilment at the end. <br><br>
+            Now I'm looking for a full-time position to utilise what I learned and keep learning. My goal is make dynamic, user-friendly, functional yet visually pleasing websites.</p>
           </div>
         </div>
       </div>
     </div>
 
    <!-- projects start -->
-  	<div class="section">
+  	<div data-anchor="page3" class="section">
+      <!-- <div class="content is-medium">
+        <h2 class="projects">/Projects</h2>
+      </div> -->
       <div class="columns">
         <div class="column">
           <div class="card js-tilt">
@@ -168,7 +189,7 @@
     <!-- projects end -->
 
 
-  	<div class="section">Contact</div>
+  	<div data-anchor="page4" id="contact" class="section">Contact</div>
   </div>
 
 
