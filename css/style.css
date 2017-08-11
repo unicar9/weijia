@@ -8,15 +8,6 @@ nav {
   z-index: 1000;
 }
 
-.section {
-  /*font-size: 6em;*/
-  /*text-align: center;*/
-}
-
-.mySelector {
-  z-index: 1000000;
-}
-
 .js-tilt {
   transform-style: preserve-3d;
 }
@@ -37,6 +28,7 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   color: #eee;
+  vertical-align: middle;
 }
 
 .projects {

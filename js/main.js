@@ -1,20 +1,4 @@
 
-// var setup = function() {
-//   var canvas = createCanvas(windowWidth, windowHeight);
-//   canvas.position(0, 0);
-//   canvas.style('z-index', '-1');
-//   mic = new p5.AudioIn();
-//   mic.start();
-// };
-//
-// var draw = function() {
-//   // background("#EF798A");
-//   var vol = mic.getLevel();
-//   noFill();
-//   stroke('#ECCBD9');
-//   ellipse(width/2, height/2, vol * windowWidth);
-// };
-
 var c;
 var vols = [];
 var mic;
@@ -54,9 +38,6 @@ $(document).ready(function() {
   .tiDelete(27)
   .tiType('Oh, I\'m also a <i>feminist</i>.');
 // home page typing effect ends
-
-
-
 
 
   $('#fullpage').fullpage({
