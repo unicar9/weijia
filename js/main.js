@@ -6,6 +6,34 @@ var colors = ['#EF798A', '#613F75', '#83BCFF', '#ECCBD9'];
 
 
 $(document).ready(function() {
+
+  // document.addEventListener('DOMContentLoaded', function () {
+  //
+  //   // Get all "navbar-burger" elements
+  //   var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  //
+  //   // Check if there are any nav burgers
+  //   if ($navbarBurgers.length > 0) {
+  //
+  //     // Add a click event on each of them
+  //     $navbarBurgers.forEach(function ($el) {
+  //       $el.addEventListener('click', function () {
+  //
+  //         // Get the target from the "data-target" attribute
+  //         var target = $el.dataset.target;
+  //         var $target = document.getElementById(target);
+  //
+  //         // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+  //         $el.classList.toggle('is-active');
+  //         $target.classList.toggle('is-active');
+  //
+  //       });
+  //     });
+  //   }
+  //
+  // });
+
+
   $('.js-tilt').tilt({
     scale: 1.1
   });
@@ -45,18 +73,9 @@ $(document).ready(function() {
     css3: true,
   });
 
-  $('.mySelector').funnyText({
-		speed: 700,
-		borderColor: 'yellow',
-		activeColor: 'red',
-		color: 'brown',
-		fontSize: '7em',
-		direction: 'both',
-    css3: true,
-	});
-
   var sketch = function(s) {
     s.setup = function() {
+      console.log('setup');
       c = s.createCanvas(s.windowWidth, s.windowHeight/2);
       c.position(0, s.windowHeight/2);
       // c.style('z-index', '-1');
@@ -65,8 +84,10 @@ $(document).ready(function() {
     };
 
     s.draw = function() {
+      // console.log('draw');
       s.background('#80FFE8');
       var vol = mic.getLevel();
+      console.log(vol);
       vols.push({
         value: vol,
         lifespan: 120,

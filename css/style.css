@@ -53,16 +53,20 @@ h2 {
   height: 50%
 }
 
-.fa {
+.contactIcons {
   font-size: 5em;
   margin: 0 .5em;
   color: #83BCFF;
 }
 
-.fa:hover {
+.contactIcons:hover {
   color: #613F75;
 }
 
 #hello {
   color: #613F75!important;
+}
+
+nav .fa {
+  font-size: 2em;
 }
