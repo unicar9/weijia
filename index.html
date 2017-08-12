@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/jquery.fullpage.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.0/css/bulma.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/jquery.js" charset="utf-8"></script>
@@ -60,7 +61,22 @@
     <div data-anchor="page2" class="section">
       <div class="columns">
         <div class="column is-5">
-          <img class="image" src="image/me.png" draggable="false" alt="">
+
+          <div class="box">
+            <img src="image/me.png" alt="Avatar" class="photo">
+            <div class="overlay">
+              <div class="text">
+                  <h2>Skills</h2>
+                  <i class="devicon-html5-plain-wordmark"></i>
+                  <i class="devicon-css3-plain-wordmark"></i>
+                  <i class="devicon-javascript-plain"></i>
+                  <i class="devicon-jquery-plain-wordmark"></i>
+                  <i class="devicon-ruby-plain-wordmark"></i>
+                  <i class="devicon-rails-plain-wordmark"></i>
+                  <i class="devicon-backbonejs-plain-wordmark"></i>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="column">
           <div class="content about is-medium">
@@ -74,9 +90,7 @@
 
    <!-- projects start -->
   	<div data-anchor="page3" class="section">
-      <!-- <div class="content is-medium">
-        <h2 class="projects">/Projects</h2>
-      </div> -->
+
       <div class="columns">
         <div class="column">
           <div class="card js-tilt">
@@ -208,7 +222,7 @@
           <h2 id="hello">If you want to say hello, I'll be there!</h2>
         </div>
         <div class="column"></div>
-        <div class="icons">
+        <div class="column is-half is-centered">
           <a href="mailto:unicar9@gmail.com?Subject=Hello%20Weijia" target="_top">
             <i class="contactIcons fa fa-envelope-square" aria-hidden="true"></i>
           </a>
